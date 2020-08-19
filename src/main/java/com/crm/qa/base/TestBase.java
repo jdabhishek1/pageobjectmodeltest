@@ -26,7 +26,7 @@ public class TestBase {
 		prop = new Properties();
 		FileInputStream ip;
 		try {
-			ip = new FileInputStream("/Users/abhdeshp/Documents/workspace/PageObjectModelTest/src"
+			ip = new FileInputStream("./src"
 					+ "/main/java/com/crm/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
