@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -46,6 +47,15 @@ public class TestBase {
 		if(browserName.equals("chrome")){
 			//System.setProperty("webdriver.chrome.driver", "chromedriver");
 			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized"); 
+			options.addArguments("enable-automation"); 
+			options.addArguments("--no-sandbox"); 
+			options.addArguments("--disable-infobars");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-browser-side-navigation"); 
+			options.addArguments("--disable-gpu"); 
+			options.addArguments("--whitelisted-ips=''");
 			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")){
 			//System.setProperty("webdriver.gecko.driver", "geckodriver");
