@@ -8,8 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.crm.qa.util.TestUtil;
@@ -56,7 +58,7 @@ public class TestBase {
 			options.addArguments("--disable-browser-side-navigation"); 
 			options.addArguments("--disable-gpu"); 
 			options.addArguments("--whitelisted-ips=''");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		}else if(browserName.equals("firefox")){
 			//System.setProperty("webdriver.gecko.driver", "geckodriver");
 			WebDriverManager.firefoxdriver().setup();
