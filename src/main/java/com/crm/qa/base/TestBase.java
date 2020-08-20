@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -50,14 +51,20 @@ public class TestBase {
 			//System.setProperty("webdriver.chrome.driver", "chromedriver");
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--incognito");
 			options.addArguments("start-maximized"); 
-			options.addArguments("enable-automation"); 
-			options.addArguments("--no-sandbox"); 
+			options.addArguments("enable-automation");
+			options.addArguments("--headless");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-extensions");
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-browser-side-navigation"); 
-			options.addArguments("--disable-gpu"); 
+			options.addArguments("--disable-gpu");
+			options.addArguments("--dns-prefetch-disable");
 			options.addArguments("--whitelisted-ips=''");
+			//options.addArguments("--disable-features=VizDisplayCompositor");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(options);
 		}else if(browserName.equals("firefox")){
 			//System.setProperty("webdriver.gecko.driver", "geckodriver");
