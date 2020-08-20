@@ -40,7 +40,8 @@ public class ContactsPageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void selectContactsTest() throws InterruptedException{
-		contactsPage.selectContactsByName("Abhishek Deshpande");	
+		contactsPage.selectContactsByName("Abhishek Deshpande");
+		Thread.sleep(5000);
 	}
 	
 	@Test(priority=3)

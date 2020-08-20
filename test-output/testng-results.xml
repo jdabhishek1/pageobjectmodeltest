@@ -1,96 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37618" started-at="2020-08-19T20:50:02Z" finished-at="2020-08-19T20:50:39Z">
+  <suite name="Default suite" duration-ms="14899" started-at="2020-08-20T02:54:20Z" finished-at="2020-08-20T02:54:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37618" started-at="2020-08-19T20:50:02Z" finished-at="2020-08-19T20:50:39Z">
+    <test name="Default test" duration-ms="14899" started-at="2020-08-20T02:54:20Z" finished-at="2020-08-20T02:54:35Z">
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="9450" started-at="2020-08-19T16:50:02Z" finished-at="2020-08-19T16:50:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@13deb50e]" name="setUp" is-config="true" duration-ms="8683" started-at="2020-08-19T22:54:20Z" finished-at="2020-08-19T22:54:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="validateCreateNewContact" duration-ms="1594" started-at="2020-08-19T16:50:12Z" data-provider="getCRMTestData" finished-at="2020-08-19T16:50:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tom]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Peter]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Google]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="selectContactsTest()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@13deb50e]" name="selectContactsTest" duration-ms="6091" started-at="2020-08-19T22:54:29Z" finished-at="2020-08-19T22:54:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="201" started-at="2020-08-19T16:50:13Z" finished-at="2020-08-19T16:50:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="10873" started-at="2020-08-19T16:50:14Z" finished-at="2020-08-19T16:50:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="validateCreateNewContact" duration-ms="1343" started-at="2020-08-19T16:50:24Z" data-provider="getCRMTestData" finished-at="2020-08-19T16:50:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[David]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cris]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Amazon]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="109" started-at="2020-08-19T16:50:26Z" finished-at="2020-08-19T16:50:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="11720" started-at="2020-08-19T16:50:26Z" finished-at="2020-08-19T16:50:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="validateCreateNewContact" duration-ms="1544" started-at="2020-08-19T16:50:38Z" data-provider="getCRMTestData" finished-at="2020-08-19T16:50:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mamta]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sharma]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Ebay]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="116" started-at="2020-08-19T16:50:39Z" finished-at="2020-08-19T16:50:39Z">
+        </test-method> <!-- selectContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@13deb50e]" name="tearDown" is-config="true" duration-ms="108" started-at="2020-08-19T22:54:35Z" finished-at="2020-08-19T22:54:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

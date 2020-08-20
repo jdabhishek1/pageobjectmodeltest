@@ -14,6 +14,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 
 	public static WebDriver driver;
@@ -26,8 +28,7 @@ public class TestBase {
 		prop = new Properties();
 		FileInputStream ip;
 		try {
-			ip = new FileInputStream("./src"
-					+ "/main/java/com/crm/qa/config/config.properties");
+			ip = new FileInputStream("./src/main/java/com/crm/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 
@@ -43,10 +44,12 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "chromedriver");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", "geckodriver");
+			//System.setProperty("webdriver.gecko.driver", "geckodriver");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		
