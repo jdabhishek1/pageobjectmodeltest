@@ -54,7 +54,7 @@ public class TestBase {
 			options.addArguments("--incognito");
 			options.addArguments("start-maximized"); 
 			options.addArguments("enable-automation");
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--disable-infobars");
