@@ -10,7 +10,7 @@ public class LoginPage extends TestBase {
 	
 	//Page Factory - OR:
 	
-	@FindBy(xpath="//a[contains(text(),'Log In')]")
+	@FindBy(xpath="//span[contains(text(),'Log In')]")
 	WebElement loginLink;
 	
 	@FindBy(name="email")
