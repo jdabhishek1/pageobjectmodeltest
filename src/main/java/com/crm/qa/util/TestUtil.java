@@ -8,6 +8,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -31,7 +32,7 @@ public class TestUtil extends TestBase{
 		driver.switchTo().frame("mainpanel");
 	}
 	
-	public static Object[][] getTestData(String sheetName){
+	public static Object[][] getTestData(String sheetName) throws InvalidFormatException{
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(TESTDATA_SHEET_PATH);
